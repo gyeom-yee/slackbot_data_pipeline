@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from timezonefinder import TimezoneFinder
 from datetime import date, timedelta
+from dotenv import load_dotenv
 
 import requests
 import json
@@ -9,11 +10,13 @@ import googlemaps
 import textwrap
 import schedule
 import time
+import os
 
 
 ############## Define Your API KEY ##############
-GMAP_API_KEY="Define_Your_GMAP_API_KEY"
-SLACK_URL = "Define_Your_SLACK_URL"
+load_dotenv()
+GMAP_API_KEY = os.environ.get('GMAP_API_KEY')
+SLACK_URL = os.environ.get('SLACK_URL')
 
 
 ############## 현지 위/경도 및 표준시간대 반환 ##############
