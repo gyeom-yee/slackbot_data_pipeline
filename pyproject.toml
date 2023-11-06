@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "company-python-project"
+version = "0.1.0"
+description = ""
+authors = ["gyeom-yee <dbsrua1105@naver.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.10"
+selenium = "^4.14.0"
+django = "^4.2.6"
+gtts = "^2.4.0"
+googletrans = "4.0.0-rc1"
+pyqt5-tools = "^5.15.9.3.3"
+flask = "^3.0.0"
+speechrecognition = "^3.10.0"
+pyaudio = "^0.2.13"
+googlemaps = "^4.10.0"
+numpy = "^1.26.1"
+pandas = "^2.1.2"
+timezonefinder = "^6.2.0"
+schedule = "^1.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
